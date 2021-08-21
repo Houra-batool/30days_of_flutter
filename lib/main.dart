@@ -1,4 +1,5 @@
-import 'package:ecommerce_project/home_screen.dart';
+import 'package:ecommerce_project/screens/home_screen.dart';
+import 'package:ecommerce_project/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomePage());
+    return MaterialApp(
+      // home: HomeScreen(),
+      darkTheme: ThemeData(brightness: Brightness.dark), //for dark theme
+      theme: ThemeData(primarySwatch: Colors.lightGreen), // for light theme
+      themeMode: ThemeMode.light,
+
+      initialRoute: '/login',
+
+      routes: {
+        "/": (context) => HomeScreen(),
+        "/login": (context) => LoginScreen(),
+        "/home": (context) => HomeScreen(),
+      },
+    );
   }
 }
