@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
       body: Material(
         child: Center(
           child: Container(
-            child: Text("starting ${days} days of flutter by ${name}"),
+            child: Text("starting $days days of flutter by $name"),
           ),
         ),
       ),

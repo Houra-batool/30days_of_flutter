@@ -1,5 +1,6 @@
 import 'package:ecommerce_project/screens/home_screen.dart';
 import 'package:ecommerce_project/screens/login_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,8 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: HomeScreen(),
-      darkTheme: ThemeData(brightness: Brightness.dark), //for dark theme
-      theme: ThemeData(primarySwatch: Colors.lightGreen), // for light theme
+      // darkTheme: ThemeData(brightness: Brightness.dark), //for dark theme
+      theme: ThemeData(
+          primarySwatch: Colors.lightGreen,
+          fontFamily: GoogleFonts.lato().fontFamily,
+          ),
+           // for light theme
       themeMode: ThemeMode.light,
 
       initialRoute: '/login',
