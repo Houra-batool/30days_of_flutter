@@ -1,5 +1,6 @@
 import 'package:ecommerce_project/screens/home_screen.dart';
 import 'package:ecommerce_project/screens/login_screen.dart';
+import 'package:ecommerce_project/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
@@ -25,8 +26,8 @@ class MyApp extends StatelessWidget {
 
       routes: {
         "/": (context) => HomeScreen(),
-        "/login": (context) => LoginScreen(),
-        "/home": (context) => HomeScreen(),
+        MyRotues.loginRoute: (context) => LoginScreen(),
+        MyRotues.homeRoute: (context) => HomeScreen(),
       },
     );
   }
