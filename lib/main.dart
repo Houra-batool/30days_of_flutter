@@ -20,10 +20,8 @@ class MyApp extends StatelessWidget {
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.lightTheme(context),
       themeMode: ThemeMode.light,
-      
-      
+
       initialRoute: MyRotues.homeRoute,
-      
 
       routes: {
         "/": (context) => HomeScreen(),

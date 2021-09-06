@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Iphone 12 Pro",
+            "price": 1399,
+            "desc": " iphone 12 pro , 512GB 6GB RAM, 5G",
+            "color": "#C0C0C0",
+            "image": "https://myshop.pk/pub/media/catalog/product/cache/26f8091d81cea4b38d820a1d1a4f62be/a/p/apple_i_phone_12_pro-_myshop-pk-__4_1_1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Iphone 12 Pro",
+            "price": 1199,
+            "desc": " iphone 12 pro , 256GB 6GB RAM, 5G",
+            "color": "#009DC4",
+            "image": "https://media1.popsugar-assets.com/files/thumbor/tt8rICQYLd_R6B8YWVQPrVWSd3Y/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/10/20/719/n/46843612/c2f332635f8f0d413eba39.70679882_/i/iphone-12-pacific-blue-color.png"
+        },
+        {
+            "id": 3,
+            "name": "Iphone 12 Pro",
+            "price": 1099,
+            "desc": " iphone 12 pro , 128GB 6GB RAM , 5G",
+            "color": "383428",
+            "image": "https://www.imore.com/sites/imore.com/files/field/image/2020/10/iphone-12-graphite-final.jpg"
+        },
+        {
+            "id": 4,
+            "name": "",
+            "price": 990,
+            "desc": "",
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 5,
+            "name": "",
+            "price": 990,
+            "desc": "",
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 6,
+            "name": "",
+            "price": 990,
+            "desc": "",
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 7,
+            "name": "",
+            "price": 990,
+            "desc": "",
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 8,
+            "name": "",
+            "price": 990,
+            "desc": "",
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 9,
+            "name": "",
+            "price": 990,
+            "desc": "",
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 10,
+            "name": "",
+            "price": 990,
+            "desc": "",
+            "color": "",
+            "image": ""
+        }
+    ]
+}
