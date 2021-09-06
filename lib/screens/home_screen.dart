@@ -1,4 +1,6 @@
+import 'package:ecommerce_project/models/catalog.dart';
 import 'package:ecommerce_project/utils/widgets/drawer.dart';
+import 'package:ecommerce_project/utils/widgets/item_widgets.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,13 +14,12 @@ class HomeScreen extends StatelessWidget {
         titleSpacing: 85.0,
         title: Text(" Catalog App "),
       ),
-      body: Material(
-        child: Center(
-          child: Container(
-            child: Text("starting $days days of flutter by $name"),
-          ),
+      body: ListView.builder(
+        itemCount: CatalogModel.itmes.length,
+        itemBuilder: (context, index){
+          return ItemWidgets();
+        },
         ),
-      ),
       drawer: MyDrawer(),
     );
   }
