@@ -26,59 +26,52 @@
         },
         {
             "id": 4,
-            "name": "",
-            "price": 990,
-            "desc": "",
-            "color": "",
-            "image": ""
+            "name": "Iphone 11 Pro Max",
+            "price": 931,
+            "desc": "Iphone 11 Pro Max, 512GB 4GB RAM, Dual SIM",
+            "color": "#4e5851",
+            "image": "https://www.iphonehacks.com/wp-content/uploads/2019/09/iphone-11-pro-gold.png"
         },
         {
             "id": 5,
-            "name": "",
-            "price": 990,
-            "desc": "",
-            "color": "",
-            "image": ""
+            "name": "Iphone 11 Pro Max",
+            "price": 852,
+            "desc": "Iphone 11 Pro Max, 256GB 4GB RAM, Dual SIM",
+            "color": "52514f",
+            "image": "http://cdn.shopify.com/s/files/1/0409/7245/products/spacegrey_853f439d-f27f-4b3f-a61e-b6f847fc1c83_1200x1200.png?v=1603980601"
         },
         {
             "id": 6,
-            "name": "",
-            "price": 990,
-            "desc": "",
-            "color": "",
-            "image": ""
+            "name": "Iphone 11 Pro Max",
+            "price": 713,
+            "desc": "Iphone 11 Pro Max, 64GB 4GB RAM, Dual SIM",
+            "color": "#4e5850",
+            "image": "https://assets.swappie.com/iphone11promaxharmaa.jpg"
         },
         {
             "id": 7,
-            "name": "",
+            "name": "Iphone 12",
             "price": 990,
-            "desc": "",
+            "desc": "Iphone 12, 512GB 4GB RAM, Dual SIM",
             "color": "",
-            "image": ""
+            "image": "https://static.pcdiga.com/media/catalog/product/cache/4a9972e1440204cef7cf19ceb7c4fc35/6/2/62172_1_2.jpg"
         },
         {
             "id": 8,
-            "name": "",
+            "name": "Iphone 11",
             "price": 990,
-            "desc": "",
+            "desc": "Iphone 11 , 256GB 4GB RAM, Dual SIM",
             "color": "",
-            "image": ""
+            "image": "https://www.bajajfinservmarkets.in/emistore/media/catalog/product/i/p/iphone1164gbgreen_add4_updated.jpeg"
         },
         {
             "id": 9,
-            "name": "",
+            "name": "Iphone 11",
             "price": 990,
             "desc": "",
-            "color": "",
-            "image": ""
+            "color": "Iphone 11 , 64GB 4GB RAM, Dual SIM",
+            "image": "https://i.pinimg.com/originals/30/66/84/3066845c38f03a48928274456146b976.jpg"
         },
-        {
-            "id": 10,
-            "name": "",
-            "price": 990,
-            "desc": "",
-            "color": "",
-            "image": ""
-        }
+        {}
     ]
 }

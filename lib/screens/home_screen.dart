@@ -16,36 +16,42 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final String name = 'Houra';
   @override
- void initState() {
-   
+  void initState() {
     super.initState();
     loadData();
   }
 
   loadData() async {
-    final  catalogJson = await rootBundle.loadString("assets/files/catalog.json");
+    await Future.delayed(Duration(seconds: 2));
+    final catalogJson =
+        await rootBundle.loadString("assets/files/catalog.json");
     final decodedData = jsonDecode(catalogJson);
     var productData = decodedData["products"];
+    CatalogModel.items =
+        List.from(productData).map<Item>((item) => Item.fromMap(item)).toList();
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    final dummylist = List.generate(20, (index) => CatalogModel.itmes[0]);
-
     return Scaffold(
       appBar: AppBar(
         titleSpacing: 85.0,
         title: Text(" Catalog App "),
       ),
-      body: ListView.builder(
-        padding: EdgeInsets.all(16.0),
-        itemCount: dummylist.length,
-        itemBuilder: (context, index) {
-          return ItemWidgets(
-            item: dummylist[index],
-          );
-        },
-      ),
+      body: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+          ? ListView.builder(
+              padding: EdgeInsets.all(16.0),
+              itemCount: CatalogModel.items.length,
+              itemBuilder: (context, index) {
+                return ItemWidgets(
+                  item: CatalogModel.items[index],
+                );
+              },
+            )
+          : Center(
+              child: CircularProgressIndicator(),
+            ),
       drawer: MyDrawer(),
     );
   }
