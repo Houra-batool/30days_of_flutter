@@ -3,7 +3,16 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 
 class CatalogModel {
-  static late List<Item> items;
+  static List<Item> items = [
+    Item(
+        id: 1,
+        name: "Iphone 12 Pro",
+        price: 1399,
+        desc: " iphone 12 pro , 512GB 6GB RAM, 5G",
+        color: "#C0C0C0",
+        image:
+            "https://myshop.pk/pub/media/catalog/product/cache/26f8091d81cea4b38d820a1d1a4f62be/a/p/apple_i_phone_12_pro-_myshop-pk-__4_1_1.jpg")
+  ];
 }
 
 class Item {

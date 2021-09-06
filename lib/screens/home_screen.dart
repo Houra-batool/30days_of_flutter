@@ -39,16 +39,42 @@ class _HomeScreenState extends State<HomeScreen> {
         titleSpacing: 85.0,
         title: Text(" Catalog App "),
       ),
-      body: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-          ? ListView.builder(
-              padding: EdgeInsets.all(16.0),
+      body: (CatalogModel.items.length > 1)
+          ? // ListView.builder(
+          //  padding: EdgeInsets.all(16.0),
+          // itemCount: CatalogModel.items.length,
+          // itemBuilder: (context, index) => ItemWidgets(
+          //     item: CatalogModel.items[index],
+          //   ))
+
+          GridView.builder(
               itemCount: CatalogModel.items.length,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2, mainAxisSpacing: 16),
               itemBuilder: (context, index) {
-                return ItemWidgets(
-                  item: CatalogModel.items[index],
+                final item = CatalogModel.items[index];
+
+                return Card(
+                  clipBehavior: Clip.antiAlias,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0)),
+                  child: GridTile(
+                    child: Container(
+                      padding: const EdgeInsets.all(12),
+                      child: Image.network(
+                        item.image,
+                        height: 50,
+                        // fit: BoxFit.contain,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.lightGreenAccent,
+                      ),
+                    ),
+                    header: Text(item.name),
+                    footer: Text(item.price.toString()),
+                  ),
                 );
-              },
-            )
+              })
           : Center(
               child: CircularProgressIndicator(),
             ),
