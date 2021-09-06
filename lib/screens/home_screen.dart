@@ -9,17 +9,22 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dummylist = List.generate(20, (index) => CatalogModel.itmes[0]);
+
     return Scaffold(
       appBar: AppBar(
         titleSpacing: 85.0,
         title: Text(" Catalog App "),
       ),
       body: ListView.builder(
-        itemCount: CatalogModel.itmes.length,
-        itemBuilder: (context, index){
-          return ItemWidgets();
+        padding: EdgeInsets.all(16.0),
+        itemCount: dummylist.length,
+        itemBuilder: (context, index) {
+          return ItemWidgets(
+            item: dummylist[index],
+          );
         },
-        ),
+      ),
       drawer: MyDrawer(),
     );
   }
